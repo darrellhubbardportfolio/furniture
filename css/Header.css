@@ -1,0 +1,195 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url("./../assets/chair-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightgray;
+}
+
+
+header>:nth-child(1) {
+    width: 90%;
+    height: 225px;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product-description-card {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    width: 800px;
+    max-width: 800px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#product-description-card>:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: gray;
+}
+
+#product-description-card>:nth-child(2) {
+    font-size: 100px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+#product-description-card>:nth-child(2)>:nth-child(1) {
+    color: cornflowerblue;
+}
+
+#product-description-card>:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: fit-content;
+    height: 20px;
+}
+
+#product-description-card>:nth-child(3)> * {
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    background-color: gray;
+    border-radius: 100%;
+    transition: 0.32s ease-out;
+}
+
+#product-description-card>:nth-child(3)>:nth-child(1) {
+    background-color: cornflowerblue;
+}
+
+#product-description-card>:nth-child(3)> *:hover {
+    cursor: pointer;
+    transition: 0.16s ease-in;
+    background-color: cornflowerblue;
+}
+
+#product-description-card>:nth-child(4) {
+    text-decoration: none;
+    font-size: 16px;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    border-bottom: 1px solid cornflowerblue;
+}
+
+#preview-item {
+    background-color: #545454;
+    width: 325px;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 3fr 1.25fr;
+    grid-template-rows: 1fr;
+    margin-right: 20px;
+    box-shadow: 0 0 16px gray;
+}
+
+#preview-item>:nth-child(1) {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    padding: 20px;
+    color: white;
+    background-image: url("./../assets/pexels-ksenia-chernaya-11112731-couch.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: inherit;
+    background-blend-mode: overlay;
+}
+
+#preview-item>:nth-child(1)>:nth-child(1) {
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+
+#preview-item>:nth-child(1)>:nth-child(2) {
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#preview-item> button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    border: 0;
+}
+
+#carousel-slide-progress-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    color: black;
+    width: 100px;
+}
+
+#carousel-slide-progress-tracker> section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+    width: 100px;
+}
+
+#carousel-slide-progress-tracker> section> h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 85px;
+    font-weight: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel-slide-progress-tracker> section>:nth-child(2) {
+    font-size: 18px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
